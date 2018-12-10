@@ -20,7 +20,7 @@ const store = (function () {
           console.log(`Can't add item because: ${error.message}`)
         }
       }
-      const findAndToggleCheck = function(id) {
+      const findAndToggleChecked = function(id) {
         let object = this.findById(id)
         object.checked = !object.checked;
       }
@@ -44,7 +44,7 @@ const store = (function () {
         searchTerm,
         findById,
         addItem,
-        findAndToggleCheck,
+        findAndToggleChecked,
         findAndUpdateName,
         findAndDelete
       };
