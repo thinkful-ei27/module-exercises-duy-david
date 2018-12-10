@@ -1,11 +1,11 @@
 const Item = (function () {
-  var validateName = function(name){
-    if (!name){
+  function validateName(name){
+    if (typeof name === "undefined"){
       throw TypeError('Name does not exist');
     }
   }
     
-  var create = function (name){
+  function create(name){
     return {
       id: cuid(),
       name: name,
@@ -13,7 +13,7 @@ const Item = (function () {
     };
   }
   return {
-validateName,
-create
+    validateName: validateName,
+    create: create,
   };
 }() );

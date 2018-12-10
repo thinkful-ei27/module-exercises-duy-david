@@ -5,11 +5,8 @@
 $(document).ready(function() {
   shoppingList.bindEventListeners();
   shoppingList.render();
-
-});
-
-const itemNames = [ '', 'apples', 'pears' ];
-itemNames.forEach(name => {
+  const itemNames = [ '', 'apples', 'pears' ];
+  itemNames.forEach(name => {
   try {
     Item.validateName(name);
     store.items.push(Item.create(name));
@@ -18,3 +15,6 @@ itemNames.forEach(name => {
   }
 });
 shoppingList.render();
+
+});
+
