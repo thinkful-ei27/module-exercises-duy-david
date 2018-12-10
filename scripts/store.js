@@ -1,5 +1,4 @@
 const store = (function () {
-    const foo = 'bar';
     items = [
         { id: cuid(), name: 'apples', checked: false },
         { id: cuid(), name: 'oranges', checked: false },
